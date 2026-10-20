@@ -19,5 +19,5 @@ SyncSettings is a client-side Minecraft mod for **Fabric**, **NeoForge** and **F
 
 ## Downloads
 
-- Modrinth: `LINK_HERE`
-- CurseForge: `LINK_HERE`
+- Modrinth: `https://modrinth.com/mod/syncsettings`
+- CurseForge: `https://www.curseforge.com/minecraft/mc-mods/syncsettings`
