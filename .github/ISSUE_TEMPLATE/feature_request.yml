@@ -1,0 +1,47 @@
+name: 💡 Feature request
+description: Suggest an idea, a new setting to sync, or support for another version or loader.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your idea! Please check the existing issues first, maybe someone already suggested it.
+        You can add a 👍 reaction to an existing request instead of opening a new one.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of feature?
+      options:
+        - Sync more things (mod configs, server list, shaders, ...)
+        - Profiles and the in-game menu
+        - Support for another Minecraft version or loader
+        - Sync between PCs
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would it solve?
+      description: Describe the situation in which you miss this feature.
+      placeholder: Every time I start a new modpack I have to set up Sodium's video settings again.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: How should it work?
+      description: Describe how you would like it to work in the game.
+    validations:
+      required: true
+
+  - type: textarea
+    id: versions
+    attributes:
+      label: Loader and Minecraft version
+      description: Which loader and version are you playing? (Helps to decide where to start.)
+      placeholder: e.g. Fabric 1.21.1 and NeoForge 1.21.1
