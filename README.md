@@ -1,101 +1,132 @@
-# SyncSettings  
-**Minecraft settings & profile synchronization (Multi-Loader)**
+<p align="center">
+  <img src="assets/banner.png" alt="SyncSettings – Your settings. Every version. Every instance." width="100%">
+</p>
 
-SyncSettings helps you keep your Minecraft settings consistent across **instances**, **servers**, and **Minecraft versions** using **profiles** and **snapshots** — with safe migrations and change logging.
+<p align="center">
+  <a href="LINK_HERE"><img src="assets/badges/badge-fabric.png" alt="Available for Fabric" height="48"></a>
+  <a href="LINK_HERE"><img src="assets/badges/badge-neoforge.png" alt="Available for NeoForge" height="48"></a>
+  <a href="LINK_HERE"><img src="assets/badges/badge-forge.png" alt="Available for Forge" height="48"></a>
+</p>
 
-This repository is the **public issue tracker & documentation hub** for SyncSettings.  
-> The source code is intentionally **not public**.
+<p align="center">
+  <a href="LINK_HERE"><b>Modrinth</b></a> ·
+  <a href="LINK_HERE"><b>CurseForge</b></a> ·
+  <a href="https://github.com/Rocket012/SyncSettings/wiki"><b>Wiki</b></a> ·
+  <a href="https://github.com/Rocket012/SyncSettings/issues"><b>Issues</b></a>
+</p>
 
----
+<img src="assets/divider.png" alt="" width="100%">
 
-## Downloads
+<img src="assets/headlines/headline-about.png" alt="About" height="56">
 
-- Modrinth: `LINK_HERE`
-- CurseForge: `LINK_HERE`
+SyncSettings keeps your Minecraft settings consistent across **instances** and **Minecraft versions**.
+Set up your sensitivity, key bindings, video and sound settings once, save them to a **profile** and every other instance starts with exactly the same setup.
 
----
+- Client-side only, no server install needed
+- Minecraft **1.20 – 26.x**
+- **Fabric**, **NeoForge** and **Forge**
 
-## What SyncSettings does
+This repository is the **public issue tracker and documentation hub** for SyncSettings.
+The source code is intentionally **not public**.
 
-- **Profiles:** Save and reuse named profiles for your settings  
-- **Snapshots:** Read/write common settings and config formats (e.g. `options.txt`, `config/*.json`, `config/*.toml`)
-- **Migrations:** Includes version-aware migration rules to handle major option changes
-- **Conflict handling:** Safe fallback + a clear change log (`syncsettings_changes.log`)
-- **Multi-loader support:** Designed for modern loaders (Fabric / Forge / NeoForge) plus legacy support depending on release
+<img src="assets/divider.png" alt="" width="100%">
 
----
+<img src="assets/headlines/headline-how-it-works.png" alt="How it works" height="56">
 
-## Quick start
+<p align="center">
+  <img src="assets/how-it-works.png" alt="Instance A saves to the profile, the profile is applied to Instance B" width="100%">
+</p>
 
-1. Install the correct loader for your Minecraft version (**Fabric / Forge / NeoForge**).
-2. Drop the SyncSettings `.jar` into your `mods` folder.
-3. Launch Minecraft once.
-4. Create a profile and save a snapshot.
-5. Switch instance/version and load the same profile again.
+1. Change your settings in any instance (for example 1.20.1).
+2. SyncSettings saves them into the active profile.
+3. Start another instance (for example 26.3) and the profile is applied automatically. No setup.
 
----
+<img src="assets/divider.png" alt="" width="100%">
 
-## Reporting bugs / requesting features (Issues)
+<img src="assets/headlines/headline-features.png" alt="Features" height="56">
 
-Issues are welcome — please include as much detail as possible.
+<p align="center">
+  <img src="assets/screenshots/profiles.png" alt="SyncSettings profile screen" width="80%">
+</p>
 
-### Before you open an issue
-- Make sure you’re using the **latest version** of SyncSettings for your Minecraft version/loader.
-- Check if a similar issue already exists.
+- **Profiles:** create, rename, duplicate, delete and switch between named profiles (e.g. *Building*, *PvP*, *Laptop*, *Recording*)
+- **What to sync:** choose which settings are part of a profile
+- **Backups / Undo:** restore earlier states of your settings if something goes wrong
+- **Snapshots:** reads and writes common formats (`options.txt`, `config/*.json`, `config/*.toml`)
+- **Migrations:** version-aware rules handle options that changed between Minecraft versions
+- **Conflict handling:** safe fallback plus a clear change log (`syncsettings_changes.log`)
+- **Shared storage:** profiles live outside your instances, so every launcher can use them
 
-### Include this info
-- Minecraft version:
-- Loader (Fabric / Forge / NeoForge) + loader version:
-- SyncSettings version:
-- Singleplayer or server:
-- Log files:
-  - `latest.log` (or server log)
-  - `syncsettings_changes.log` (if relevant)
-- Steps to reproduce:
-- Expected result vs actual result:
+More details in the **[Wiki](https://github.com/Rocket012/SyncSettings/wiki)**.
 
-### What to upload
-- Please **do not** upload private tokens, accounts, or personal data.
-- If configs contain sensitive info, redact them.
+<img src="assets/divider.png" alt="" width="100%">
 
----
+<img src="assets/headlines/headline-compatibility.png" alt="Compatibility" height="56">
 
-## Modpack permissions
+| | Supported |
+|---|---|
+| Minecraft | 1.20 – 26.x |
+| Loaders | Fabric, NeoForge, Forge |
+| Side | Client only |
+
+Profiles are stored in a shared folder outside your instances:
+
+| OS | Path |
+|---|---|
+| Windows | `C:\Users\Public\.syncsettings` |
+| Linux / macOS | `~/.syncsettings` |
+
+The exact path is shown at the bottom of the SyncSettings screen in game.
+
+<img src="assets/divider.png" alt="" width="100%">
+
+<img src="assets/headlines/headline-modpacks.png" alt="Modpacks" height="56">
 
 **Modpacks are allowed** to include SyncSettings **as an unmodified `.jar`**.
 
-**Conditions:**
-- **No reuploads / no mirrors:** Do not rehost the `.jar` on other sites.
-- **Use official sources:** Prefer downloading via the official Modrinth/CurseForge project pages.
-- **No modified distributions:** Forks/ports/modified builds may not be distributed without explicit permission.
+- **No reuploads / no mirrors:** do not rehost the `.jar` on other sites.
+- **Use official sources:** download via the official Modrinth / CurseForge project pages.
+- **No modified distributions:** forks, ports or modified builds may not be distributed without explicit permission.
 
-If you need special permissions (mirrors, forks, ports), open an issue or contact me.
+For special permissions (mirrors, forks, ports) open an issue.
 
----
+<img src="assets/divider.png" alt="" width="100%">
+
+<img src="assets/headlines/headline-faq.png" alt="FAQ" height="56">
+
+**Is the mod open source?**
+No. SyncSettings is closed source (All Rights Reserved).
+
+**Do I need it on the server?**
+No. SyncSettings is client-side only.
+
+**Can I use it in my modpack?**
+Yes, under the modpack conditions above.
+
+**Where are my profiles stored?**
+See the table under Compatibility. The path is also shown in game.
+
+**I found a bug, what now?**
+Open an [issue](https://github.com/Rocket012/SyncSettings/issues) and follow the [Reporting Issues](https://github.com/Rocket012/SyncSettings/wiki/Reporting-Issues) guide in the wiki.
+
+More questions are answered in the [Wiki FAQ](https://github.com/Rocket012/SyncSettings/wiki/FAQ).
+
+<img src="assets/divider.png" alt="" width="100%">
+
+## Reporting bugs / requesting features
+
+Please check that you are on the **latest version** and that no similar issue exists. Then include:
+
+- Minecraft version
+- Loader (Fabric / NeoForge / Forge) + loader version
+- SyncSettings version
+- Launcher
+- `latest.log` and, if relevant, `syncsettings_changes.log`
+- Steps to reproduce, expected result vs. actual result
+
+Do **not** upload tokens, account data or other personal information. Redact configs if needed.
 
 ## License
 
-**All Rights Reserved (Closed Source)**  
-This repository contains documentation and issue tracking only. The source code is not publicly available.
-
----
-
-## FAQ
-
-### Is the mod open source?
-No. SyncSettings is **closed source**.
-
-### Can I use this in my modpack?
-Yes — modpacks are allowed under the conditions above.
-
-### Where are configuration files stored?
-Profiles are stored outside instances, typically under:
-- `~/.syncsettings/profiles`
-
-(Exact paths may vary by OS / launcher.)
-
----
-
-## Contact
-
-- GitHub Issues: Use this repository
+**All Rights Reserved (Closed Source).**
+This repository contains documentation and issue tracking only.
