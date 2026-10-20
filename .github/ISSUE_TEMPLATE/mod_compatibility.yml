@@ -1,0 +1,70 @@
+name: 🧩 Mod compatibility
+description: SyncSettings does not work together with another mod, or a mod's setting is not synced correctly.
+title: "[Compatibility] "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        SyncSettings syncs Minecraft's own options (`options.txt`), including key bindings of other mods.
+        Config files of other mods, shader settings and the server list are **not** synced yet, see **[What Gets Synced](https://github.com/Rocket012/SyncSettings/wiki/What-Gets-Synced)**.
+        If you would like those to be synced, please open a **feature request** instead.
+
+  - type: input
+    id: other-mod
+    attributes:
+      label: Which mod?
+      description: Name and version of the other mod, ideally with a link.
+      placeholder: e.g. Sodium 0.6.0 (https://modrinth.com/mod/sodium)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod loader
+      options:
+        - Fabric
+        - NeoForge
+        - Forge
+    validations:
+      required: true
+
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft version
+      placeholder: e.g. 1.21.1
+    validations:
+      required: true
+
+  - type: input
+    id: mod-version
+    attributes:
+      label: SyncSettings file
+      placeholder: e.g. syncsettings-neoforge-1.2.0+1.21.1.jar
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What goes wrong?
+      description: Does the game crash, is the SyncSettings button missing, or is a setting not synced?
+    validations:
+      required: true
+
+  - type: textarea
+    id: only-two-mods
+    attributes:
+      label: Does it also happen with only these two mods installed?
+      description: Please test with only SyncSettings and the other mod (plus their required libraries), if you can.
+      placeholder: "Yes / No / Not tested"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Upload `logs/latest.log` (and the crash report, if there is one) to [mclo.gs](https://mclo.gs) and paste the link.
+        For sync problems, also paste the last lines of `.syncsettings/syncsettings_changes.log`.
