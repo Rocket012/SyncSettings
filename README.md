@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="LINK_HERE"><b>Modrinth</b></a> ·
+  <a href="https://modrinth.com/mod/syncsettings"><b>Modrinth</b></a> ·
   <a href="LINK_HERE"><b>CurseForge</b></a> ·
   <a href="https://github.com/Rocket012/SyncSettings/wiki"><b>Wiki</b></a> ·
   <a href="https://github.com/Rocket012/SyncSettings/issues"><b>Issues</b></a>
