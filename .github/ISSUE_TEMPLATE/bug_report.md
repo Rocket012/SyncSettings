@@ -1,7 +1,9 @@
+---
 name: 🐞 Bug report
-description: Something does not work as it should, settings got lost, or the game crashes.
-title: "[Bug] "
+about: Something does not work as it should, settings got lost, or the game crashes.
+title: '[Bug] '
 labels: ["bug"]
+---
 body:
   - type: markdown
     attributes:
