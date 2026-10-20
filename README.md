@@ -3,9 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="LINK_HERE"><img src="assets/badges/badge-fabric.png" alt="Available for Fabric" height="48"></a>
-  <a href="LINK_HERE"><img src="assets/badges/badge-neoforge.png" alt="Available for NeoForge" height="48"></a>
-  <a href="LINK_HERE"><img src="assets/badges/badge-forge.png" alt="Available for Forge" height="48"></a>
+  <a href="https://modrinth.com/mod/syncsettings/versions?l=fabric"><img src="assets/badges/badge-fabric.png" alt="Available for Fabric" height="48"></a>
+  <a href="https://modrinth.com/mod/syncsettings/versions?l=neoforge"><img src="assets/badges/badge-neoforge.png" alt="Available for NeoForge" height="48"></a>
+  <a href="https://modrinth.com/mod/syncsettings/versions?l=forge"><img src="assets/badges/badge-forge.png" alt="Available for Forge" height="48"></a>
 </p>
 
 <p align="center">
